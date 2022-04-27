@@ -1,0 +1,222 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+
+.page {
+    width: 100%;
+    font-family: "Inter", Arial, sans-serif;
+    color: white;
+    background-color: #000000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+
+}
+
+.header {
+  max-width: 880px;
+  padding: 45px 0 41px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;                               /*по идеи и без этого будет работать*/
+  border-bottom: 1px solid #545454;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    width: 100%;
+    padding: 28px 0 31.6px;
+  }
+}
+
+.header__logo {
+  max-width: 142px;
+  max-height: 33px;
+}
+
+@media screen and (max-width: 425px) {
+  .header__logo {
+    max-width: 103.74px;;
+    max-height: 24.4px;
+    padding-left: 27px;
+  }
+}
+
+
+.content {
+
+}
+
+.profile {
+  padding-top: 40px;
+  max-width: 880px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 650px) {
+  .profile {
+    flex-direction: column;
+    padding-top: 42px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .profile {
+    margin: 0 19px;
+  }
+}
+
+
+.profile__card {
+  display: flex;
+}
+
+@media screen and (max-width: 650px) {
+  .profile__card {
+    flex-direction: column;
+  }
+}
+
+
+.profile__avatar {
+  max-width: 120px;
+  max-height: 120px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 650px) {
+  .profile__avatar {
+   align-self: center;
+  }
+}
+
+.profile__info {
+  display: grid;
+  grid-template-columns: 1fr 24px;
+  gap: 16px 18px;
+  max-width: 336px;
+  margin-left: 40px;
+  align-self: center;
+}
+
+@media screen and (max-width: 650px) {
+  .profile__info {
+    grid-template-columns: 1fr 18px;
+    gap: 14px 10px;
+    margin: 26px 0 0;
+    max-width: 282px;                       /*мб тут поменять*/
+  }
+}
+
+
+.profile__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 48px;
+  max-width: 294px;
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;                                /*почитать про эти свойства*/
+  overflow: hidden;
+}
+
+@media screen and (max-width: 650px) {
+  .profile__title {
+    font-size: 27px;
+    line-height: 33px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .profile__title {
+    max-width: 189px;
+  }
+}
+
+
+.profile__edit-button {
+  width: 24px;
+  height: 24px;
+  background: url(../images/Edit-Button.svg);
+  border: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.5s ease;
+  align-self: center;
+  margin-top: 6px;
+}
+
+@media screen and (max-width: 650px) {
+  .profile__edit-button {
+    width: 18px;
+    height: 18px;
+    margin-top: 0;
+  }
+}
+
+.profile__edit-button:hover {
+  opacity: 0.6;
+}
+
+.profile__description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  max-width: 336px;
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;                                /*почитать про эти свойства*/
+  overflow: hidden;
+}
+
+@media screen and (max-width: 650px) {
+  .profile__description {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .profile__description {
+    max-width: 282px;
+  }
+}
+
+
+.profile__add-button {
+  width: 150px;
+  height: 50px;
+  background: url(../images/Add-Button.svg);
+  border: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.5s ease;
+  align-self: center;
+}
+
+@media screen and (max-width: 650px) {
+  .profile__add-button {
+    width: 282px;
+    height: 50px;
+    background: url(../images/Add-Button-mobile.svg);
+    margin-top: 36px;
+    padding: 0;
+  }
+}
+
+.profile__add-button:hover {
+  opacity: 0.6;
+}
+
+.elements {
+  
+}
