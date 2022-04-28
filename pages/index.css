@@ -172,7 +172,7 @@
   max-width: 336px;
   margin: 0;
   text-overflow: ellipsis;
-  white-space: nowrap;                                /*почитать про эти свойства*/
+  white-space: nowrap;
   overflow: hidden;
 }
 
@@ -217,6 +217,143 @@
   opacity: 0.6;
 }
 
+
 .elements {
-  
+  max-width: 880px;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+
+.element {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px 17px;
+}
+
+@media screen and (max-width: 900px) {
+  .element {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .element {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 19px;
+    row-gap: 20px;
+  }
+}
+
+
+.element__item {
+  width: 282px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.element__image {
+  width: 282px;
+  height: 282px;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+  display: block;
+}
+
+.element__bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 246px;
+  height: 28px;
+  margin: 25px 15px 0px 21px;
+  padding-bottom: 31px;
+}
+
+.element__title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin: 0;
+  max-width: 200px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.element__heart-button {
+  width: 22px;
+  height: 19px;
+  background: url(../images/heart.svg);
+  border: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.5s ease;
+  align-self: flex-end;
+
+}
+
+.element__heart-button:hover {
+  opacity: 0.5;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 880px;
+  margin: 0 auto;
+  padding-top: 66px;
+  padding-bottom: 60px;
+}
+
+@media screen and (max-width: 900px) {
+  .footer {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    padding-top: 48px;
+    padding-bottom: 36px;
+    margin: 0 19px;
+    justify-content: flex-start;
+  }
+}
+
+.footer__copyright {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #545454;
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .footer__copyright {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+}
+
+.popup__container {
+
 }
