@@ -1,0 +1,17 @@
+.popup__imput {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: black;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin: 0 0 30px;
+  padding: 0 0 13px;
+}
+
+.popup__imput:last-of-type {
+  margin: 0;
+}
