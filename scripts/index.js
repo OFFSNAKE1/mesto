@@ -13,25 +13,25 @@ let inputName = document.querySelector ("#name");
 let inputAbout = document.querySelector ("#job");
 
 
-function OpenPopup () {
-  popup.classList.add("popup__opened");
+function openPopup () {
+  popup.classList.add("popup_opened");
   inputName.value = profileName.textContent;
   inputAbout.value = profileAbout.textContent;
 }
 
-function ClosePopup () {
-  popup.classList.remove("popup__opened");
+function closePopup () {
+  popup.classList.remove("popup_opened");
 }
 
 function formSubmitHandler(evt) {
   evt.preventDefault();
   profileName.textContent = inputName.value;
   profileAbout.textContent = inputAbout.value;
-  ClosePopup ();
+  closePopup ();
 }
 
-popupOpenButton.addEventListener("click", OpenPopup);
+popupOpenButton.addEventListener("click", openPopup);
 
-popupCloseButton.addEventListener("click", ClosePopup);
+popupCloseButton.addEventListener("click", closePopup);
 
 popupForm.addEventListener ("submit", formSubmitHandler);

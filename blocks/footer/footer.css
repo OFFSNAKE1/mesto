@@ -9,7 +9,7 @@
 
 @media screen and (max-width: 900px) {
   .footer {
-    justify-content: center;
+    margin: 0 19px;
   }
 }
 
@@ -17,7 +17,6 @@
   .footer {
     padding-top: 48px;
     padding-bottom: 36px;
-    margin: 0 19px;
     justify-content: flex-start;
   }
 }
