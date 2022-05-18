@@ -1,4 +1,4 @@
-.element__heart-button {
+.card__heart-button {
   width: 22px;
   height: 19px;
   background: url(../../../images/heart.svg);
@@ -8,9 +8,8 @@
   background-size: contain;
   transition: 0.5s ease;
   align-self: flex-end;
-
 }
 
-.element__heart-button:hover {
+.card__heart-button:hover {
   opacity: 0.5;
 }
