@@ -3,7 +3,7 @@ const popupOpenButton = document.querySelector(".profile__edit-button");
 
 // Форма для заполнения имя и профессия все оттуда взяли
 const formUserPopup= document.querySelector(".popup_edit");
-const popupEditCloseButton= formUserPopup.querySelector(".popup__close-button");
+const popupEditCloseButton = formUserPopup.querySelector(".popup__close-button");
 const popupUserForm = formUserPopup.querySelector(".popup__form");
 const inputName = formUserPopup.querySelector("#name");
 const inputAbout = formUserPopup.querySelector("#job");
