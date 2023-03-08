@@ -168,4 +168,3 @@ function formCardHandler(evt) {
   closePopup(formAddCard);
 }
 formHandlerAddCard.addEventListener("submit", formCardHandler);
-
